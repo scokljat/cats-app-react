@@ -9,10 +9,18 @@ function List() {
   useEffect(() => {
     dispatch(fetchPosts());
   }, []);
+  const changePicture = () => {
+    dispatch(fetchPosts());
+  };
 
   return (
-    <div>
-      <img src={cat.cat.url} height="300px" />
+    <div className="images">
+      <div key={cat.cat.id}>
+        <img src={cat.cat.url} />
+      </div>
+      <button className="btn" onClick={changePicture}>
+        Next
+      </button>
     </div>
   );
 }
