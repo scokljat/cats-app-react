@@ -1,6 +1,6 @@
 # Cats app
 
-![screenshot](screenshot.png)
+![screenshot](screenshot%20.png)
 
 ## License
 
