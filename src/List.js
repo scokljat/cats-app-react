@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchPosts } from "./redux/action";
+import { fetchPosts } from "./action";
 
 function List() {
   const cat = useSelector((state) => state);

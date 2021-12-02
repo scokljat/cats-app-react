@@ -4,7 +4,6 @@ export const fetchPosts = () => {
   return async (dispatch, getState) => {
     try {
       const response = await axios.get("http://thatcopy.pw/catapi/rest/");
-      console.log(response.data);
 
       dispatch({
         type: "SET_CATS",
@@ -15,11 +14,3 @@ export const fetchPosts = () => {
     }
   };
 };
-
-// import { ActionTypes } from "./ActionTypes";
-// export const setCats = (cats) => {
-//   return {
-//     type: "SET_CATS",
-//     payload: cats,
-//   };
-// };
