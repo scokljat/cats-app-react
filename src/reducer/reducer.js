@@ -1,4 +1,5 @@
-import { ActionTypes } from "./ActionTypes";
+import { ActionTypes } from "../constants/ActionTypes";
+
 const initialState = {
   cat: {},
 };
